@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <h1>Temperature Converter</h1>
+    <form onsubmit="convert(event)">
+        <input type="text" name="input1" id="input1">
+        <br>
+        <select name="method" id="method">
+            <option value="c2f">Centigrade to Fahreinheit</option>
+            <option value="f2c">Fahreinheit to Centigrade</option>
+        </select>
+        <p id="result"></p>
+        <input type="submit" value="Convert">
+    </form>
+
+    <script>
+        var input1 = document.getElementById("input1")
+        var method = document.getElementById("method")
+        var resultText = document.getElementById("result")
+
+        function convert(e) {
+            e.preventDefault()
+            var value1 = input1.value
+            var result;
+            switch (method.value) {
+                case "c2f":
+                    result = (value1 * 9 / 5) + 32
+                    console.log("converted to f")
+                    break;
+                case "f2c":
+                    result = (value1 - 32) * 5 / 9
+                    console.log("converted to c")
+                    break
+                default:
+                    console.log("unknown error")
+                    break;
+            }
+            resultText.innerText = "result: " +result.toFixed(2)
+        }
+    </script>
+</body>
+
+</html>
