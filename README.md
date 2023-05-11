@@ -9,3 +9,4 @@
 - Task 07 - [Voter](https://umairayub-dev.github.io/Js-Tasks/07-Voter/)
 - Task 08 - [WorldCup Squad](https://umairayub-dev.github.io/Js-Tasks/08-WorldCupSquad/)
 - Task 09 - [Functions Tasks](https://umairayub-dev.github.io/Js-Tasks/FunctionsTasks/)
+- Task 10 - [Temperature Converter](https://umairayub-dev.github.io/Js-Tasks/TemperatureConverter/)
